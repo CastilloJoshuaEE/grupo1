@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fifa/views/ventanaLogin.dart';
 import 'package:fifa/views/ventanaPrincipal.dart';
 import 'package:fifa/views/ventanaRegistro.dart';
+import 'package:fifa/views/ventanaTareasJSON.dart';  
 
 void main() {
   runApp(const MyApp());
@@ -48,6 +49,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const MyHomePageVentanaLogin(title: 'EduTask'),
         'principal': (context) => const MyHomePageVentanaPrincipal(),
         'registro': (context) => const MyHomePageVentanaRegistro(),
+        'json_tareas': (context) => const VentanaTareasJSON(), 
       },
     );
   }

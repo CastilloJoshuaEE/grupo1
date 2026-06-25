@@ -195,9 +195,11 @@ class _InicioEduTask extends StatelessWidget {
             _AccesoCard(
               icono: Icons.task_alt_rounded,
               titulo: 'Mis tareas',
-              descripcion: 'Próximo formulario del proyecto EduTask.',
+              descripcion: 'Visualiza tus tareas desde un archivo JSON.',
               color: const Color(0xFF1565C0),
-              onTap: onAbrirTareas,
+              onTap: () {
+                Navigator.pushNamed(context, 'json_tareas');  // ← NUEVA NAVEGACIÓN
+              },
             ),
             const SizedBox(height: 12),
             _AccesoCard(

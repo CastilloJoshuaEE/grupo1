@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "Desarrollo de Aplicaciones Móviles",
+    "descripcion": "Implementar el módulo de gestión de estudiantes en Flutter",
+    "fechaEntrega": "2026-06-30",
+    "prioridad": "Alta",
+    "categoria": "Programación",
+    "completada": false
+  },
+  {
+    "titulo": "Base de Datos II",
+    "descripcion": "Diseñar el modelo relacional para el proyecto EduTask",
+    "fechaEntrega": "2026-07-15",
+    "prioridad": "Media",
+    "categoria": "Bases de Datos",
+    "completada": false
+  },
+  {
+    "titulo": "Matemáticas Aplicadas",
+    "descripcion": "Resolver ejercicios de cálculo diferencial e integral",
+    "fechaEntrega": "2026-06-20",
+    "prioridad": "Baja",
+    "categoria": "Matemáticas",
+    "completada": true
+  },
+  {
+    "titulo": "Ingeniería de Software",
+    "descripcion": "Elaborar el documento de requisitos del proyecto final",
+    "fechaEntrega": "2026-07-01",
+    "prioridad": "Alta",
+    "categoria": "Ingeniería",
+    "completada": false
+  },
+  {
+    "titulo": "Redes y Comunicaciones",
+    "descripcion": "Configurar el simulador de redes con 5 nodos",
+    "fechaEntrega": "2026-06-25",
+    "prioridad": "Media",
+    "categoria": "Redes",
+    "completada": false
+  }
+]
