@@ -1,15 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:fifa/views/ventanaLogin.dart';
-import 'package:fifa/views/ventanaPrincipal.dart';
-import 'package:fifa/views/ventanaRegistro.dart';
-import 'package:fifa/views/ventanaTareasJSON.dart';  
+import 'screens/splash_screen.dart';
+import 'screens/login_screen.dart';
+import 'screens/registro_screen.dart';
+import 'screens/dashboard_screen.dart';
+import 'screens/tareas_screen.dart';
+import 'screens/apuntes_screen.dart';
+import 'screens/recordatorios_screen.dart';
+import 'screens/perfil_screen.dart';
+import 'screens/admin_estudiantes_screen.dart';
+import 'screens/categorias_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const EduTaskApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class EduTaskApp extends StatelessWidget {
+  const EduTaskApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -46,10 +52,16 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => const MyHomePageVentanaLogin(title: 'EduTask'),
-        'principal': (context) => const MyHomePageVentanaPrincipal(),
-        'registro': (context) => const MyHomePageVentanaRegistro(),
-        'json_tareas': (context) => const VentanaTareasJSON(), 
+        '/': (context) => const SplashScreen(),
+        '/login': (context) => const LoginScreen(),
+        '/registro': (context) => const RegistroScreen(),
+        '/dashboard': (context) => const DashboardScreen(),
+        '/tareas': (context) => const TareasScreen(),
+        '/apuntes': (context) => const ApuntesScreen(),
+        '/recordatorios': (context) => const RecordatoriosScreen(),
+        '/perfil': (context) => const PerfilScreen(),
+        '/admin_estudiantes': (context) => const AdminEstudiantesScreen(),
+        '/categorias': (context) => const CategoriasScreen(),
       },
     );
   }
